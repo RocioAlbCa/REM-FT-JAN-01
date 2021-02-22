@@ -1,0 +1,23 @@
+
+body{
+    margin: 0px;
+}
+
+h1{
+    color: gold;
+}
+h3{
+    color: rgb(20, 255, 196);
+}
+h4{
+    color: lightcoral;
+}
+
+header{
+    background-color: lightcyan;
+}
+
+/* div{
+    border: solid 1px;
+    
+} */
