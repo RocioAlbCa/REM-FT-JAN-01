@@ -1,23 +1,87 @@
 
+*{
+    font-family: 'Roboto Slab', serif;
+}
 body{
-    margin: 0px;
+    margin: 0px;    
 }
-
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    }
 h1{
-    color: gold;
+    color: rgb(255, 255, 255);
+    font-size: 3.052rem    
 }
-h3{
-    color: rgb(20, 255, 196);
-}
-h4{
-    color: lightcoral;
-}
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
 
 header{
-    background-color: lightcyan;
+    background-color: #F7F4EF;
+}
+#logo{
+    width: 100px;
+    position: absolute;
+    left: 2.57%;
+    right: 93.12%;
+    top: 0.46%;
+    bottom: 98.1%;
+}
+button{
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btn-large{
+    background-color: #F9B39A;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    width: 300px;
+    height: 80px;
+    font-size: 21px;
+}
+.btn-small{
+    background-color: #A1DCD2;
+    border: none;
+    color: #1F4160;
+    padding: 10px;
+    font-size: 16px;
+}
+.card{
+    border-radius: 25px;
+    background-color: lavender;
+    padding: 20px;
+    border: 2px solid rebeccapurple;
+    width: 250px;
+    margin: 50px 30px 10px 30px;
 }
 
-/* div{
-    border: solid 1px;
-    
-} */
+img{
+    width: 100%;
+}
+
+#hero{
+    height: 100vh;
+    /* vh= view port heigh */
+    text-align: center;
+    background-image: url('../img/tim-stief-D_HqAz_A4T4-unsplash.jpg');
+    background-size: cover;
+}
+
+#about{
+    height: 50vh;
+} 
+#contact {
+        height: 50vh;
+    }
+footer{
+    height: 50vh;
+}
