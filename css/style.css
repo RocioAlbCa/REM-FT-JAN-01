@@ -1,23 +1,29 @@
 
 *{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 body{
     margin: 0px;    
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Poppins', sans-serif;
     margin-block: 0; 
     }
+
 h1{
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    margin-top: 20px;
     font-size: 3.052rem;   
 }
 h2 {font-size: 2.441rem;}
 
 h3 {font-size: 1.953rem;}
 
-h4 {font-size: 1.563rem;}
+h4 {
+    font-size: 1.563rem;
+    margin: 20px 0;
+    /* color: white; */
+}
 
 h5 {font-size: 1.25rem;}
 
@@ -32,7 +38,7 @@ header{
     width: 70px;
 }
 button{
-    border-radius: 25px;
+    border-radius: 50px;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -48,41 +54,144 @@ button{
     max-height: 80px;
     font-size: 21px;
 }
+.btn-large:hover{
+    background-color: #FF9671;
+}
+
 .btn-small{
-    background-color: #A1DCD2;
+    background-color:rgba(255, 255, 255, 0.7);
     border: none;
     color: #1F4160;
-    padding: 10px;
     font-size: 16px;
+    width: 40px;
+    height: 40px;;
+    border-radius: 50%;
 }
-.card{
+.card, .testimonials{
     border-radius: 25px;
-    background-color: lavender;
+    background-color: white;
     padding: 20px;
-    border: 2px solid rebeccapurple;
-    width: 250px;
-    margin: 50px 30px 10px 30px;
+    /* border: 2px solid rebeccapurple; */
+    width: 100%;
+    margin: 50px 10px;
 }
-#card{
-    justify-content: space-between;
+.card01{
+    background-color: #A1DCD2;
+
+}
+.card02{
+    background-color: #F9B39A;
+    
+}
+.card03{
+    background-color: #FCE6B1;
+    
 }
 .container {
     display: flex; /* or inline-flex */
+    justify-content: space-between;
+}
+.featuresBig{
+    background-color: rgba(214, 229, 214, 0.5);
+    padding: 50px 20px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.feature .circle {
+    height: 185px;
+    width: 185px;
+    background-color: #C0E5C1;
+    border-radius: 50%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
+/* testimonial */
+.testimonials{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.testimonials img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.testimonials .Img_Title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.star{  
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.star img{
+    width: 100%;
+    height: auto;
+}
+.slideDots{
+    text-align: center;
+}
+span.dot{
+    height: 20px;
+    width: 20px;
+    background-color:#EAF2EA;
+    border-radius: 50%;
+    display: inline-block;
+}
+span.active{
+ background-color: #C0E5C1;   
+}
 img{
     width: 100%;
 }
+/* start - extra information */
+section.container .extrainformation{
+    width: 100%;
+    align-items: center;
+}
+section.container img.ImgYoga{
+    width: 70%;
+    
+}
+
+section.container div{
+    width: 50%;
+}
+section.container div p{
+    width: 100%;
+    line-height: 2em;
+}
+
+/* end - extra information */
 
 #hero{
     height: 100vh;
     /* vh= view port heigh */
     text-align: center;
-    background-image: url('../img/tim-stief-D_HqAz_A4T4-unsplash.jpg');
+    background-image: url('../img/Bg-Image.png');
     background-size: cover;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    color: #1F4160;
+}
+#hero img{
+    width: 345px;
 }
 
 #about{
@@ -98,4 +207,46 @@ footer{
     background-color: #063048;
     color: white;
     
+}
+
+/* links */
+a:link{
+    color: #1F4160;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #5E7183;
+}
+
+a:hover, a:active{
+    color: #1F4160;
+    text-decoration: underline;
+    font-weight: 500;
+}
+/* menu links */
+a:link.menu{
+    padding: 10px;
+}
+
+/* ------------------------------------- */
+/* ------------------------------------- */
+
+/* ---------TABLET-------------- */
+
+@media only screen and (min-width: 600px) and (max-width:767px){
+    h1{
+       
+    }
+
+}
+
+
+
+/* ------------------------------------- */
+/* ------------------------------------- */
+
+/* ---------DESKTOP-------------- */
+@media only screen and (min-width:l 768px) and (max-width:768px){
+
 }
