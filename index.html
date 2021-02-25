@@ -11,31 +11,30 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/bff7ea3e36.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <!-- start - header -->
-    <header>
+    <header class="container">
         <div id="logo">
             <img src="img/icons/logo.svg">
         </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="http://www.ironhack.com">Buy Now</a>
+        </nav>
         <div>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="http://www.ironhack.com">Buy Now</a>
-            </nav>
-        </div>
-         <div>
-            <a href=“#”>Login</a>
-            <a href=“#”>Icon</a>
+            <a href=“#”><i class="far fa-user-circle fa-2x"></i></a>
+            <a href=“#”><i class="fas fa-search fa-2x"></i></a>
         </div>
     </header>
-    <div></div>
     <!-- end - header -->
 
     <!-- start - hero  -->
-    <section id="hero">
+    <section id="hero" class="container">
         <h1>Heading1</h1>
         <h4>random tex</h4>
         <button class="btn-large">this is a button</button>
@@ -43,7 +42,7 @@
     <!-- end - hero -->
 
     <!-- start - cards -->
-    <section>
+    <section id="card" class="container">
         <!-- start card 1 -->
         <div class="card">
             <img src="img/jon-tyson-z1VJQJktxJs-unsplash.jpg" alt="Plant">
@@ -87,14 +86,54 @@
         <!-- end - about -->
     
         <!-- start - contact -->
-        <section id=“contact”>
-            Contact
+        <section id="contact">
+            <h3>Let's connect</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <br><br>
+
+            <label for="name">email</label>
+            <input type="email" name="" id="email">
+            <br><br>
+
+            <input type="checkbox" name="" id="terms"checked>
+            <label for="terms">I accept terms and conditions</label>
+        
+            <br><br>
+
+            <label for="date">Starting Date</label>
+            <input type="date" name="" id="date">
+            <br><br>
+
+            <label for="document">Add your ID</label>
+            <input type="file" name="" id="document">
+            <br><br>
+
+            <label for="password">Create a password</label>
+            <input type="password" name="" id="password">
+            <br><br>
+
+            <label for="mobile">Your phone number</label>
+            <input type="tel" name="" id="mobile">
+            <br><br>
+
+            <input type="submit" value="Send">
+
         </section>
         <!-- end - contact -->
     
         <!-- start - footer -->
         <footer>
-            Here is the footer Reep. by the end. Check it out.
+
+        <p>Follow me:</p>    
+        
+            <i class="fab fa-behance-square fa-2x"></i>
+            <i class="fab fa-instagram-square fa-2x"></i>
+            <i class="fab fa-medium fa-2x"></i>
+            
+            
+    
+    
         </footer>
         <!-- end - footer -->
     
