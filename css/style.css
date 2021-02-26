@@ -86,7 +86,7 @@ button{
 section.container.extrainformation{
     justify-content:center;
     align-items: center;
-    margin: 150px 0;
+    margin: 150px 50px;
 }
 section.container .extra{
     width: 50%;
@@ -278,8 +278,17 @@ footer button{
     font-weight: 500;
     padding: 8px;
 }
+.comments {
+    font-size: 0.9em;
+    margin-bottom: 0;
+
+}
+.comments a{
+    color: #F9B39A !important;
+}
 .follow .followIcons{
     margin-right: 10px;
+    color: white !important;
 }
 
 /* links */
